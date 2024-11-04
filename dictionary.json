@@ -1542,11 +1542,16 @@
         }
       }
     },
+    "discovery_detail": {
+      "caption": "Discovery Detail",
+      "description": "The Discovery Details object.",
+      "type": "discovery_detail"
+    },
     "discovery_details": {
       "caption": "Discovery Details",
-      "description": "An unordered collection of <code>{key:value}</code> pairs that represent a data classification attribute.",
+      "description": "A collection of <code>Discovery Detail</code> objects.",
       "is_array": true,
-      "type": "key_value_object"
+      "type": "discovery_detail"
     },
     "dispersion": {
       "caption": "Root Dispersion",

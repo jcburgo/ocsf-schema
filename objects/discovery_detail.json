@@ -1,0 +1,17 @@
+{
+  "caption": "Discovery Detail",
+  "description": "The Discovery Detail object describes details about a data classification job.",
+  "extends": "object",
+  "name": "discovery_detail",
+  "attributes": {
+    "count": {
+      "requirement": "optional"
+    },
+    "type": {
+      "requirement": "optional"
+    },
+    "value": {
+      "requirement": "optional"
+    }
+  }
+}

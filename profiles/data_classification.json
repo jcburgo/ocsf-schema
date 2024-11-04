@@ -4,7 +4,7 @@
   "caption": "Data Classification",
   "name": "data_classification",
   "attributes": {
-    "data_classifications": {
+    "data_classification": {
       "group": "context",
       "requirement": "recommended"
     }
