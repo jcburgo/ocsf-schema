@@ -52,9 +52,46 @@
     "confidentiality_id": {
       "requirement": "recommended"
     },
+    "discovery_details": {
+      "description": "An unordered collection of <code>{key:value}</code> pairs that represent a data classification attribute.",
+      "requirement": "optional"
+    },
     "policy": {
       "description": "Details about the data policy that governs data handling and security measures related to classification.",
       "requirement": "optional"
+    },
+    "status": {
+      "description": "The resultant status of the classification job normalized to the caption of the <code>status_id</code> value. In the case of 'Other', it is defined by the event source.",
+      "requirement": "recommended"
+    },
+    "status_details": {
+      "description": "The contextual description of the status, status_code values.",
+      "requirement": "optional"
+    },
+    "status_id": {
+      "description": "The normalized status identifier of the classification job.",
+      "enum": {
+        "0": {
+          "caption": "Unknown"
+        },
+        "1": {
+          "caption": "Complete",
+          "description": "The classification job completed for all evaluated resources."
+        },
+        "2": {
+          "caption": "Partial",
+          "description": "The classification job partially completed for the evaluated resources."
+        },
+        "3": {
+          "caption": "Fail",
+          "description": "The classification job failed for all evaluated resources."
+        },
+        "99": {
+          "caption": "Other",
+          "description": "The classification job type id is not mapped. See the <code>type</code> attribute, which contains a data source specific value."
+        }
+      },
+      "requirement": "recommended"
     }
   },
   "constraints": {

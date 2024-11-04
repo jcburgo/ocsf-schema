@@ -1288,6 +1288,12 @@
       "description": "The Data Classification object includes information about data classification levels and data category types.",
       "type": "data_classification"
     },
+    "data_classifications": {
+      "caption": "Data Classifications",
+      "description": "A collection of <code>Digital Classification</code> objects.",
+      "type": "data_classification",
+      "is_array": true
+    },
     "data_lifecycle_state": {
       "caption": "Data Lifecycle State",
       "description": "The name of the stage or state that the data was in. E.g., Data-at-Rest, Data-in-Transit, etc.",
@@ -1535,6 +1541,12 @@
           "description": "The direction is not mapped. See the <code>direction</code> attribute, which contains a data source specific value."
         }
       }
+    },
+    "discovery_details": {
+      "caption": "Discovery Details",
+      "description": "An unordered collection of <code>{key:value}</code> pairs that represent a data classification attribute.",
+      "is_array": true,
+      "type": "key_value_object"
     },
     "dispersion": {
       "caption": "Root Dispersion",
